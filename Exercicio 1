@@ -1,0 +1,11 @@
+# Solicita a idade em dias
+dias_total = int(input("Digite sua idade em dias: "))
+
+# Calcula anos, meses e dias
+anos = dias_total // 365
+resto_dias = dias_total % 365
+meses = resto_dias // 30
+dias = resto_dias % 30
+
+# Exibe o resultado
+print(f"Você tem {anos} anos, {meses} meses e {dias} dias.")
