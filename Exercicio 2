@@ -1,0 +1,18 @@
+import math
+
+# Leitura dos lados do triângulo
+a = int(input("Digite o valor de a: "))
+b = int(input("Digite o valor de b: "))
+c = int(input("Digite o valor de c: "))
+
+# Verifica se os valores podem formar um triângulo
+maior = max(a, b, c)
+soma_dos_outros = a + b + c - maior
+
+if maior < soma_dos_outros:
+    # Calcula a área usando a fórmula de Heron
+    s = (a + b + c) / 2
+    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    print(f"Os valores formam um triângulo. A área é: {area:.2f}")
+else:
+    print(f"Os valores {a}, {b}, {c} não formam um triângulo.")
