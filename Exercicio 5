@@ -1,0 +1,10 @@
+def inverter_palavras(frase):
+    palavras = frase.split()  # Divide a frase em palavras
+    invertidas = [palavra[::-1] for palavra in palavras]  # Inverte cada palavra
+    nova_frase = ' '.join(invertidas)  # Junta as palavras invertidas em uma nova frase
+    return nova_frase
+
+# Exemplo de uso
+frase_original = "Olá pessoal tudo certo"
+frase_invertida = inverter_palavras(frase_original)
+print(frase_invertida)  # Saída: álO laossep odut otrec
